@@ -14,13 +14,23 @@ public class no1{
 			x = y - x;
 			sum1 = sum1 + x
 		}
-		System.out.print(sum1);
-		System.out.println();
+		
+		
 		for(int j = 0; j < m; j++){
 			b = a + b;
 			a = b - a;
 			sum2 = sum2 + a
 		}
-		System.out.print(sum2);
+		for(int i = n; i > 0; i--){
+			y = y - x;
+			x = x + y;
+			System.out.print(y);
+		}
+		System.out.println();
+		for(int i = m; i > 0; i--){
+			b = b - a;
+			a = a + b;
+			System.out.print(b);
+		}
 	}
 }
